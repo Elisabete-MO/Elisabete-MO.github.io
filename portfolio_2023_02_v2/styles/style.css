@@ -1,5 +1,6 @@
 /* block__element--modifier */
 @import url(https://db.onlinewebfonts.com/c/4398a39f4d9a1593b725e0dc594c77fe?family=Retro+Computer);
+@import 'footer.css';
 
 /* colors */
 :root {
@@ -187,20 +188,6 @@ figcaption {
     background-color: var(--color-secondary);
 }
 
-/* footer */
-footer {
-    background: linear-gradient(45deg, var(--color-black-opacity-1) 0%, var(--color-secondary) 50%, var(--color-black-opacity-1) 100%);
-    color: var(--color-primary);
-    display: flex;
-    font-size: small;
-    grid-area: footer;
-    height: auto;
-    justify-content: space-around;
-    padding: 1rem 0;
-    text-align: center;
-    text-shadow: 0.2rem 0.2rem 1rem var(--color-text);
-    width: 100%;
-}
 
 @media (max-width: 600px) {
     .header__top {
@@ -209,9 +196,5 @@ footer {
 
     main {
         margin-top: 30rem;
-    }
-
-    footer {
-        flex-flow: column nowrap;
     }
 }
