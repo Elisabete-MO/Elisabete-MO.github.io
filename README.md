@@ -7,7 +7,7 @@
         <img src="https://img.shields.io/badge/JavaScript-F0DB4F?style=for-the-badge&logo=javascript&logoColor=323330" />
     </a>
      <a alt="HTML" href="https://html.spec.whatwg.org/dev/" target="_blank">
-        <img src="  https://img.shields.io/badge/HTML5-E34c26?style=for-the-badge&logo=html5&logoColor=white" />
+        <img src="https://img.shields.io/badge/HTML5-E34c26?style=for-the-badge&logo=html5&logoColor=white" />
     </a>
     <a alt="CSS" href="https://html.spec.whatwg.org/dev/" target="_blank">
         <img src="https://img.shields.io/badge/CSS3-2965f1?style=for-the-badge&logo=css3&logoColor=white" />
