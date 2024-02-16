@@ -1,5 +1,6 @@
 /* block__element--modifier */
 @import url(https://db.onlinewebfonts.com/c/4398a39f4d9a1593b725e0dc594c77fe?family=Retro+Computer);
+@import 'header.css';
 @import 'footer.css';
 
 /* colors */
@@ -17,6 +18,7 @@
     --color-sextary: #5d78ed;
 }
 
+/* global */
 * { /*imp*/
     margin: 0;
     padding: 0;
@@ -43,7 +45,6 @@ body {
     width: 100vw; /*imp*/
 }
 
-/* global */
 a {
     color: var(--color-text);
     text-decoration: none;
@@ -77,47 +78,17 @@ main {
     width: 80%;
 }
 
+nav {
+    text-align: left;
+    width: auto;
+}
+
 strong {
     color: var(--color-quaternary);
 }
 
 ul {
     list-style-type: none;
-}
-
-/* header */
-.header__top {
-    align-items: center;
-    background: linear-gradient(0deg, var(--color-black) 30%, var(--color-black-opacity-1) 100%);
-    display: flex;
-    flex-flow: row nowrap;
-    grid-area: header;
-    justify-content: space-evenly;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.header__top h1 {
-    padding: 1.5rem 0 1.5rem 0;
-    text-shadow: -0.2rem -0.2rem 0 var(--color-primary), 0.2rem 0.2rem 0 var(--color-secondary);
-}
-
-.header__top img {
-    border-bottom: 0.2rem double var(--color-primary);
-    border-left: 0.2rem double var(--color-secondary);
-    border-right: 0.2rem double var(--color-primary);
-    border-top: 0.2rem double var(--color-secondary);
-    box-shadow: -0.3rem -0.3rem 0 var(--color-primary), 0.3rem 0.3rem 0 var(--color-secondary);
-    margin: 1vh 1vw;
-    padding: 1vh 1vw;
-}
-
-/* global! */
-nav {
-    text-align: left;
-    width: auto;
 }
 
 /* main */
@@ -190,10 +161,6 @@ figcaption {
 
 
 @media (max-width: 600px) {
-    .header__top {
-        flex-flow: column nowrap;
-    }
-
     main {
         margin-top: 30rem;
     }
