@@ -1,5 +1,5 @@
 /* block__element--modifier */
-@import url(https://db.onlinewebfonts.com/c/4398a39f4d9a1593b725e0dc594c77fe?family=Retro+Computer);
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron&family=Press+Start+2P&display=swap');
 @import 'header.css';
 @import 'footer.css';
 
@@ -10,8 +10,10 @@
     --color-black-opacity-2: #00000080;
     --color-text: #f5f5f5;
     --color-text-opacity-1: #f5f5f5b3;
-    --color-primary: #00d0ff; /* Title, links, borders, shadows */
-    --color-secondary: #760eed; /* Title, links, borders, shadows */
+    --color-primary: #00d0ff;
+    /* Title, links, borders, shadows */
+    --color-secondary: #760eed;
+    /* Title, links, borders, shadows */
     --color-tertiary: #0e37ed;
     --color-quaternary: #2d0eed;
     --color-quinary: #0e7ded;
@@ -19,9 +21,32 @@
 }
 
 /* global */
-* { /*imp*/
+* {
+    /*imp*/
     margin: 0;
     padding: 0;
+}
+
+/* Fonts */
+
+.orbitron-regular {
+    font-family: "Orbitron";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kode-mono-regular {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -30,33 +55,37 @@ body {
     /* background-image: linear-gradient(45deg, #760eedcc 0%, #760eed99), url('./images/wallpaper1.jpg'); */
     background-size: cover;
     background-position: center;
-    box-sizing: border-box; /*imp*/
+    box-sizing: border-box;
+    /*imp*/
     color: var(--color-text);
     display: grid;
-    font-family: "Retro Computer";
+    font-family: "Press Start 2P";
     /* font-size: calc(16px + 1vw); font grows 1px for every 100px of viewport width */
     grid-template-areas:
-    "header"
-    "main"
-    "footer";
+        "header"
+        "main"
+        "footer";
     grid-template-rows: auto 1fr auto;
-    height: 100vh; /*imp*/
+    height: 100vh;
+    /*imp*/
     letter-spacing: 0.3rem;
-    width: 100vw; /*imp*/
+    width: 100vw;
+    /*imp*/
 }
 
 a {
     color: var(--color-text);
     text-decoration: none;
-    text-shadow: 0 0 0.6rem var(--color-primary) , 0 0 1.9rem var(--color-primary) , 0 0 3.45rem var(--color-primary) , 0 0 6.25rem var(--color-primary); 
+    text-shadow: 0 0 0.6rem var(--color-primary), 0 0 1.9rem var(--color-primary), 0 0 3.45rem var(--color-primary), 0 0 6.25rem var(--color-primary);
 }
 
 a:hover {
-    color: var(--color-text-opacity-1); 
+    color: var(--color-text-opacity-1);
     text-shadow: -0.15rem -0.15rem 0 var(--color-primary), 0.15rem 0.15rem 0 var(--color-secondary);
 }
 
-h2, h3 {
+h2,
+h3 {
     font-weight: 300;
     margin: 0.7rem 0;
     text-shadow: -0.15rem -0.15rem 0 var(--color-primary), 0.15rem 0.15rem 0 var(--color-secondary);
@@ -92,7 +121,8 @@ ul {
 }
 
 /* main */
-.subtitle, .post__title {
+.subtitle,
+.post__title {
     text-align: center;
 }
 
@@ -152,7 +182,7 @@ figcaption {
 .button__home:hover {
     background-color: var(--color-sextary);
     border: 0.25rem inset var(--color-sextary);
-    text-shadow: 0 0 0.5rem var(--color-text) , 0 0 2rem var(--color-text) , 0 0 3.45rem var(--color-text) , 0 0 6.25rem var(--color-text); 
+    text-shadow: 0 0 0.5rem var(--color-text), 0 0 2rem var(--color-text), 0 0 3.45rem var(--color-text), 0 0 6.25rem var(--color-text);
 }
 
 .button__home:active {
