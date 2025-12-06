@@ -8,15 +8,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <link rel="shortcut icon" type="image/png" href="./images/horde.png" />
     <title>My-Name</title>
 </head>
 
 <body>
-    <header class="header__top"></header>
+    <header class="header" role="banner">
+        <div class="brand" aria-hidden="true">
+            <img src="./images/devil.jpeg" alt="Avatar" />
+        </div>
+
+        <!-- <div class="title">
+            <h1>My-Name</h1>
+        </div> -->
+
+        <nav class="nav" role="navigation" aria-label="Main">
+            <ul>
+                <li><a href="#about" class="header__top__link">About</a></li>
+                <li><a href="#certs" class="header__top__link">Certifications</a></li>
+                <li><a href="#skills" class="header__top__link">Skills</a></li>
+                <li><a href="#projects" class="header__top__link">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section id="anc_post">
-            <h2 class="subtitle">My-Name</h2>
             <article class="post">
                 <header>
                     <h3 class="post__title">My-Name</h3>
@@ -25,6 +44,7 @@
                         <figcaption>A beach at sunset</figcaption>
                     </figure>
                 </header>
+
                 <p class="post__content">"Morbi consectetur pharetra nibh, sit amet lobortis ipsum cons equat sit amet .
                     Cras dictum rutrum vulputate. Praesent lorem orci, iaculis id euismod at, condimentum ac lacus. <a
                         href="www.google.com.br" target="_blank">Domain</a> ac purus <a
@@ -60,6 +80,14 @@
             <p style="font-style: italic">Since MS-DOS...</p>
             <p style="font-size: small">Formada em Processamento de Dados<br> e Lic. em Matematica</p>
             <p>Sao Paulo/SP</p>
+        </aside>
+
+        <!-- Botão para abrir o modal -->
+        <label for="toggle-modal" class="open-btn">☰</label>
+        <input type="checkbox" id="toggle-modal">
+
+        <!-- Modal lateral -->
+        <div class="side-modal">
             <ul class="contact_list">
                 <li>
                     <a href="https://github.com/Elisabete-MO" target="_blank">
@@ -87,11 +115,11 @@
                     </a>
                 </li>
             </ul>
-        </aside>
+        </div>
+
     </main>
     <footer id="footer__container"></footer>
 </body>
-<script src="./scripts/header.js"></script>
 <script src="./scripts/footer.js"></script>
 
 </html>

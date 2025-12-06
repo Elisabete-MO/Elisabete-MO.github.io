@@ -4,11 +4,10 @@ const headerContent = `
 <nav>
   <ul>
     <li><a href="#anc_post" class="header__top__link">Home</a></li>
-    <li><a href="#" class="header__top__link">About me</a></li>
-    <li><a href="#" class="header__top__link">Formacao</a></li>
-    <li><a href="#" class="header__top__link">Experiencia</a></li>
-    <li><a href="#" class="header__top__link">Projetos</a></li>
+    <li><a href="#" class="header__top__link">About</a></li>
+    <li><a href="#" class="header__top__link">Certifications</a></li>
     <li><a href="#" class="header__top__link">Skills</a></li>
+    <li><a href="#" class="header__top__link">Projects</a></li>
     <li><a href="#" class="header__top__link">Contact</a></li>
   </ul>
 </nav> `;

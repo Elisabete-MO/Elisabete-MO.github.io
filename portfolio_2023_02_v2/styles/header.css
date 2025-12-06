@@ -1,15 +1,10 @@
 /* header */
-.header__top {
-  align-items: center;
+/* .header__top {
   background: linear-gradient(0deg, var(--color-black) 30%, var(--color-black-opacity-1) 100%);
-  display: flex;
-  flex-flow: row nowrap;
   grid-area: header;
-  justify-content: space-evenly;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  border: 2px solid #FFFFFF;
 }
 
 .header__top h1 {
@@ -29,6 +24,106 @@
 
 @media (max-width: 600px) {
   .header__top {
-      flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+} */
+
+/* container do cabeçalho */
+.header {
+  background: linear-gradient(0deg, var(--color-black) 30%, var(--color-black-opacity-1) 100%);
+  overflow: hidden;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.brand {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  text-align: left;
+}
+
+.header .brand,
+.header .title,
+.header .nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header .nav {
+  align-self: right;
+}
+
+.brand img {
+  aspect-ratio: 1 / 1;
+  border-bottom: 0.2rem double var(--color-primary);
+  border-left: 0.2rem double var(--color-secondary);
+  border-right: 0.2rem double var(--color-primary);
+  border-top: 0.2rem double var(--color-secondary);
+  box-shadow: -0.3rem -0.3rem 0 var(--color-primary), 0.3rem 0.3rem 0 var(--color-secondary);
+  display: block;
+  height: 100px;
+  object-fit: cover;
+  max-width: 100px;
+  width: 100%;
+}
+
+.title {
+  margin-left: 12px;
+  margin-right: 24px;
+}
+
+.title h1 {
+  line-height: 1;
+}
+
+.nav {
+  display: inline-block;
+  padding-right: 2rem;
+  text-align: right;
+  vertical-align: middle;
+  width: 80%;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-left: 14px;
+  vertical-align: middle;
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.nav a {
+  padding: 6px 8px;
+}
+
+.nav a:hover,
+.nav a:focus {
+  outline: none;
+}
+
+/* quando a tela for estreita, empilha mantendo a semântica */
+@media (max-width: 640px) {
+  .header {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .header .brand,
+  .header .title,
+  .header .nav {
+    display: block;
+    margin: 6px auto;
+  }
+
+  .nav ul li {
+    display: inline-block;
+    margin-left: 8px;
   }
 }

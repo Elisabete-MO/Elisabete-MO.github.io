@@ -1,7 +1,5 @@
 /* block__element--modifier */
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron&family=Press+Start+2P&display=swap');
-@import 'header.css';
-@import 'footer.css';
 
 /* colors */
 :root {
@@ -22,13 +20,13 @@
 
 /* global */
 * {
-    /*imp*/
+    box-sizing: border-box;
     margin: 0;
+    overflow: auto;
     padding: 0;
 }
 
 /* Fonts */
-
 .orbitron-regular {
     font-family: "Orbitron";
     font-optical-sizing: auto;
@@ -56,27 +54,19 @@ body {
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
-    /*imp*/
     color: var(--color-text);
-    display: grid;
     font-family: "Press Start 2P";
-    /* font-size: calc(16px + 1vw); font grows 1px for every 100px of viewport width */
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    /*imp*/
-    letter-spacing: 0.3rem;
+    font-size: calc(0.5vh + 1vw);
+    letter-spacing: 0.01rem;
+    min-height: 100vh;
     width: 100vw;
-    /*imp*/
 }
 
 a {
+    background-color: transparent;
     color: var(--color-text);
     text-decoration: none;
-    text-shadow: 0 0 0.6rem var(--color-primary), 0 0 1.9rem var(--color-primary), 0 0 3.45rem var(--color-primary), 0 0 6.25rem var(--color-primary);
+    /* text-shadow: 0 0 0.6rem var(--color-primary), 0 0 1.9rem var(--color-primary), 0 0 3.45rem var(--color-primary), 0 0 6.25rem var(--color-primary); */
 }
 
 a:hover {
@@ -101,10 +91,8 @@ p {
 }
 
 main {
-    grid-area: main;
     margin: auto;
-    margin-top: 16rem;
-    width: 80%;
+    width: 90%;
 }
 
 nav {
@@ -143,6 +131,8 @@ ul {
     text-align: justify;
 }
 
+*/
+
 /* global! */
 figure {
     display: flex;
@@ -152,8 +142,8 @@ figure {
 }
 
 figure img {
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
 }
 
 figcaption {
@@ -189,9 +179,52 @@ figcaption {
     background-color: var(--color-secondary);
 }
 
+/* títulos, botões ou links: */
+@keyframes neonPulse {
 
-@media (max-width: 600px) {
-    main {
-        margin-top: 30rem;
+    0%,
+    100% {
+        text-shadow:
+            0 0 .5rem var(--color-primary),
+            0 0 1rem var(--color-primary),
+            0 0 1.5rem var(--color-secondary);
     }
+
+    50% {
+        text-shadow:
+            0 0 .2rem var(--color-secondary),
+            0 0 .5rem var(--color-tertiary),
+            0 0 1rem var(--color-primary);
+    }
+}
+
+.neonPulse {
+    animation: neonPulse 3s infinite alternate;
+}
+
+/* Títulos */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    5% {
+        opacity: 0.2;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    15% {
+        opacity: 0.2;
+    }
+
+    20% {
+        opacity: 1;
+    }
+}
+
+.flicker {
+    animation: flicker 0.3s linear infinite alternate;
 }
