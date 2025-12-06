@@ -6,8 +6,9 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <link rel="shortcut icon" type="image/png" href="./images/horde.png" />
     <title>My-Name</title>
 </head>
@@ -60,6 +61,14 @@
             <p style="font-style: italic">Since MS-DOS...</p>
             <p style="font-size: small">Formada em Processamento de Dados<br> e Lic. em Matematica</p>
             <p>Sao Paulo/SP</p>
+        </aside>
+
+        <!-- Botão para abrir o modal -->
+        <label for="toggle-modal" class="open-btn">☰</label>
+        <input type="checkbox" id="toggle-modal">
+
+        <!-- Modal lateral -->
+        <div class="side-modal">
             <ul class="contact_list">
                 <li>
                     <a href="https://github.com/Elisabete-MO" target="_blank">
@@ -87,7 +96,8 @@
                     </a>
                 </li>
             </ul>
-        </aside>
+        </div>
+
     </main>
     <footer id="footer__container"></footer>
 </body>
