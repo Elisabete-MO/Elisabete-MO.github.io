@@ -5,14 +5,16 @@
   display: flex;
   flex-flow: row nowrap;
   grid-area: header;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 2rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 
-.header__top h1 {
+.header__clock {
   padding: 1.5rem 0 1.5rem 0;
   text-shadow: -0.2rem -0.2rem 0 var(--color-primary), 0.2rem 0.2rem 0 var(--color-secondary);
 }
@@ -27,8 +29,13 @@
   padding: 1vh 1vw;
 }
 
+.header__top ul {
+  display: flex;
+  gap: 2rem;
+}
+
 @media (max-width: 600px) {
   .header__top {
-      flex-flow: column nowrap;
+    flex-flow: column nowrap;
   }
 }

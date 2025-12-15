@@ -16,6 +16,51 @@
 <body>
     <header class="header__top"></header>
     <main>
+        <section id="home">
+            <h1><strong>Elisabete M. de Oliveira</strong></h1>
+            <p style="font-style: italic">Since MS-DOS...</p>
+        </section>
+
+        <section id="about">
+            <h2>Sobre mim</h2>
+            <aside>
+                <p style="font-size: small">Formada em Processamento de Dados<br> e Lic. em Matematica</p>
+                <p>Sao Paulo/SP</p>
+            </aside>
+            <p>Organizada, extrovertida, minimalista e gosto de trabalhos artesanais</p>
+            <p>Mae da Pitty e de <img src="./images/fishes.png" width="20px"></p>
+            <p>Conservacao Ambiental e minha bandeira</p>
+            <p>Amante de <a href="https://www.worldofwarcraft.com/pt-br/" target="_blank">World of Warcraft</a> e <a
+                    href="https://www.jackwhiteiii.com/" target="_blank">Jack White</a></p>
+            <p>Apaixonada por Calculo e Java</p>
+            <br>
+        </section>
+        <section id="skills">
+            <h2>Habilidades</h2>
+
+            <div class="skills-list">
+                <article>JavaScript</article>
+                <article>HTML</article>
+                <article>CSS</article>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projetos</h2>
+
+            <article>
+                <h3>Nome do projeto</h3>
+                <p>Descrição</p>
+                <a href="#">Ver projeto</a>
+            </article>
+
+            <article>
+                <h3>Outro projeto</h3>
+                <p>Descrição</p>
+                <a href="#">Ver projeto</a>
+            </article>
+        </section>
+
         <section id="anc_post">
             <h2 class="subtitle">My-Name</h2>
             <article class="post">
@@ -43,25 +88,9 @@
                 <summary>Alguns detalhes</summary>
                 <p>Mais informacoes sobre os detalhes.</p>
             </details>
-        </section>
-        <section>
-            <h2>Cabecalho</h2>
-            <p>Organizada, extrovertida, minimalista e gosto de trabalhos artesanais</p>
-            <p>Mae da Pitty e de <img src="./images/fishes.png" width="20px"></p>
-            <p>Conservacao Ambiental e minha bandeira</p>
-            <p>Amante de <a href="https://www.worldofwarcraft.com/pt-br/" target="_blank">World of Warcraft</a> e <a
-                    href="https://www.jackwhiteiii.com/" target="_blank">Jack White</a></p>
-            <p>Apaixonada por Calculo e Java</p>
-            <br>
             <a class="button__home" href="#anc_post">Home</a>
+
         </section>
-        <aside id="about">
-            <h2>Sobre</h2>
-            <p><strong>Elisabete M. de Oliveira</strong></p>
-            <p style="font-style: italic">Since MS-DOS...</p>
-            <p style="font-size: small">Formada em Processamento de Dados<br> e Lic. em Matematica</p>
-            <p>Sao Paulo/SP</p>
-        </aside>
 
         <!-- Botão para abrir o modal -->
         <label for="toggle-modal" class="open-btn">☰</label>
@@ -101,7 +130,6 @@
     </main>
     <footer id="footer__container"></footer>
 </body>
-<script src="./scripts/header.js"></script>
+<script type="module" src="./scripts/main.js"></script>
 <script src="./scripts/footer.js"></script>
-
 </html>
