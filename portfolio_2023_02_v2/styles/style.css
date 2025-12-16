@@ -77,7 +77,6 @@ a:hover {
 h2,
 h3 {
     font-weight: 300;
-    margin: 0.7rem;
     text-shadow: -0.15rem -0.15rem 0 var(--color-primary), 0.15rem 0.15rem 0 var(--color-secondary);
 }
 
@@ -112,8 +111,7 @@ ul {
 }
 
 /* main */
-.subtitle,
-.post__title {
+.subtitle {
     text-align: center;
 }
 
