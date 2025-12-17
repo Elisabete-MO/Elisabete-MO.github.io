@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="./styles/skills.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/projects.css">
     <link rel="shortcut icon" type="image/png" href="./images/horde.png" />
-    <title>My-Name</title>
+    <title>Hello 🌎</title>
 </head>
 
 <body>
@@ -55,32 +56,17 @@
         <section id="skills" class="post"></section>
 
         <section id="projects">
-            <h2>Projetos</h2>
+            <h2>🧩 Projetos</h2>
 
-            <article>
-                <h3>Nome do projeto</h3>
-                <p>Descrição</p>
-                <a href="#">Ver projeto</a>
-            </article>
+            <div class="projects__carousel">
+                <button class="carousel__btn prev" aria-label="Previous project">‹</button>
 
-            <article>
-                <h3>Outro projeto</h3>
-                <p>Descrição</p>
-                <a href="#">Ver projeto</a>
-            </article>
-        </section>
+                <div class="projects__viewport">
+                    <div class="projects__track"></div>
+                </div>
 
-        <section id="anc_post">
-            <h2 class="subtitle">My-Name</h2>
-            <aside>
-                <p>Algum conteudo relacionado a um &lt;article&gt;</p>
-            </aside>
-            <details>
-                <summary>Alguns detalhes</summary>
-                <p>Mais informacoes sobre os detalhes.</p>
-            </details>
-            <a class="button__home" href="#anc_post">Home</a>
-
+                <button class="carousel__btn next" aria-label="Next project">›</button>
+            </div>
         </section>
 
         <!-- Botão para abrir o modal -->

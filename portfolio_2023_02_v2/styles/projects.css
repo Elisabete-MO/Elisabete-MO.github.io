@@ -1,0 +1,70 @@
+.carousel__btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+#projects {
+  background: none;
+  border: none;
+  box-shadow: none;
+  position: relative;
+}
+
+.project__card {
+  background: var(--color-black-opacity-1);
+  border: 0.2rem double var(--color-secondary);
+  box-shadow: 0 0 0.6rem var(--color-black-opacity-1), 0 0 1.9rem var(--color-black-opacity-2), 0 0 3.45rem var(--color-secondary);
+  display: flex;
+  flex: 0 0 280px;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 280px;
+  padding: 1.5rem;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.project__card:hover {
+  border: 0.2rem solid var(--color-primary);
+  box-shadow: 0 0 0.6rem var(--color-black-primary), 0 0 1.9rem var(--color-black-primary);
+  transform: translateY(-4px);
+}
+
+.projects__carousel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project__description {
+  flex-grow: 1;
+}
+
+.project__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.projects__track {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem;
+}
+
+.projects__track::-webkit-scrollbar {
+  display: none;
+}
+
+.projects__viewport {
+  max-width: calc((333px * 3) + (2rem * 3));
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
