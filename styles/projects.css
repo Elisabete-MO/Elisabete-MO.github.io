@@ -30,9 +30,15 @@
   flex-direction: column;
   justify-content: space-between;
   max-width: 280px;
-  padding: 1.5rem;
   position: relative;
   transition: transform 0.2s ease;
+}
+
+.project__card h3,
+.project__card p,
+.project__footer {
+  align-items: center;
+  padding: 1rem;
 }
 
 .project__card:hover {
@@ -52,10 +58,15 @@
 }
 
 .project__footer {
+  background: var(--color-black);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 1rem;
+}
+
+.project__footer a {
+  font-size: 0.8rem;
 }
 
 .projects__track {
@@ -68,6 +79,11 @@
 
 .projects__track::-webkit-scrollbar {
   display: none;
+}
+
+.project__title {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .projects__viewport {

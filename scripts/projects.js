@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
           card.className = 'project__card';
 
           card.innerHTML = `
-            <h3>${repo.name}</h3>
+          
+            <h3 class="project__title">${repo.name}</h3>
             <p>${repo.description || 'Sem descrição.'}</p>
             <div class="project__footer">
               <small>🛠 ${repo.language || '—'}</small>
