@@ -1,69 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-<!-- sessão de estilo -->
-    <style>
-        h3 {
-            color: midnightblue;
-        }
-
-        h4 {
-            color: blueviolet;
-        }
-
-    </style>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/skills.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="shortcut icon" type="image/png" href="./images/horde.png" />
+    <title>Hello 🌎</title>
 </head>
+
 <body>
-<div style="width:100%;height:0;padding-bottom:135%;position:relative;">
-    <iframe src="https://giphy.com/embed/TTy5YmVmhmWhq"
-            width="100%"
-            height="100%"
-            style="position:absolute"
-            class="giphy-embed"
-            allowFullScreen>
+    <header class="header__top"></header>
+    <main>
+        <section id="home">
+            <h1><strong>Elisabete M. de Oliveira</strong></h1>
+            <p style="font-style: italic">Since MS-DOS...</p>
+        </section>
 
-    </iframe>
-</div>
-<p>
-    <a href="https://giphy.com/gifs/80s-nintendo-TTy5YmVmhmWhq">via GIPHY</a>
-</p>
+        <section id="about" class="post">
+            <h2 class="post__title">About</h2>
+            <p>
+                Organizada, extrovertida e minimalista, com afinidade por trabalhos artesanais e resolução de problemas.
+            </p>
 
-<!--    &lt;!&ndash;1ª seção&ndash;&gt;-->
+            <div class="post__content">
+                <div>
+                    <ul class="about__list">
+                        <li>🎓 Formada em Processamento de Dados e Licenciatura em Matemática</li>
+                        <li>📍 Cotia/SP</li>
+                        <li>🌱 Conservação ambiental como princípio</li>
+                        <li>💻 Apaixonada por Cálculo e Java</li>
+                        <li>🎮 <a href="https://www.worldofwarcraft.com/pt-br/" target="_blank">World of Warcraft</a>
+                        </li>
+                        <li>🎵 <a href="https://www.jackwhiteiii.com/" target="_blank">Jack White</a> / <a
+                                href="https://maneskin.com/" target="_blank">Måneskin</a> / <a
+                                href="https://www.mychemicalromance.com/" target="_blank">MCR</a></li>
+                        <li>🐾 Mãe da Pitty e de peixes</li>
+                    </ul>
+                </div>
 
-<!--    <h3><strong>Elisabete Martins de Oliveira</strong></h3>-->
-<!--    <p>Since MS-DOS....</p>-->
-<!--    <p>Dev FullStack em formação na <a href="https://www.betrybe.com/" target=_blanck><img src="Imagens/trybeicon.png" alt="Trybe" width="50px"></a></p>-->
-<!--    <p>Joinville, SC - Brasil</p>-->
-<!--    -->
-<!--    &lt;!&ndash;2ª seção&ndash;&gt;-->
+                <figure class="about__image">
+                    <img src="./images/DistantIllinformedBoutu-size_restricted.gif" alt="Imagem de Jogo Retro">
+                    <figcaption>Space Invaders</figcaption>
+                </figure>
+            </div>
+        </section>
 
-<!--    <h4><strong>Me apresentando</strong></h4>-->
-<!--    <a href=""><img src="Imagens/Seta.png" width="40px"></a>-->
-<!--        <p>Apaixonada por Cálculo, <a href="https://worldofwarcraft.com/pt-br/" target=_blanck><img src="Imagens/wowicon.png" alt="World of Warcraft" width="140px")></a> e <a href="https://jackwhiteiii.com/" target=_blanck><img src="Imagens/iiiicon.png" alt="Jack White" width="60px")></a></p>-->
-<!--    -->
-<!--    &lt;!&ndash;3ª seção&ndash;&gt;-->
-<!--    -->
-<!--    <h4><strong>Formação:</strong></h4>-->
-<!--    <ul>-->
-<!--        <li>Processamento de Dados pela <a href="http://www.fatecsp.br/" target=_blanck><img src="Imagens/fatecicon.png" alt="Fatec SP" width="140px")></a></li>-->
-<!--        <li>Licenciatura em Matemática pela <a href="https://www.cruzeirodosul.edu.br/" target=_blanck><img src="Imagens/unicsulicon.png" alt="Universidade Cruzeiro do Sul" width="120px")></a></li>-->
-<!--    </ul>-->
-<!--    <img src="blue-coral-reef-ocean-sea-1564671-wallhere.com.jpg" width="1350px">-->
+        <section id="skills" class="post"></section>
+
+        <section id="projects">
+            <h2>🧩 Projetos</h2>
+
+            <div class="projects__carousel">
+                <button class="carousel__btn prev" aria-label="Previous project">‹</button>
+
+                <div class="projects__viewport">
+                    <div class="projects__track"></div>
+                </div>
+
+                <button class="carousel__btn next" aria-label="Next project">›</button>
+            </div>
+        </section>
+
+        <!-- Botão para abrir o modal -->
+        <label for="toggle-modal" class="open-btn">☰</label>
+        <input type="checkbox" id="toggle-modal">
+
+        <!-- Modal lateral -->
+        <div class="side-modal">
+            <ul class="contact_list">
+                <li>
+                    <a href="https://github.com/Elisabete-MO" target="_blank">
+                        <img class="contact_image" src="./images/github.png" alt="Github Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/elisabete-martinsdeoliveira/" target="_blank">
+                        <img class="contact_image" src="./images/linkedin.png" alt="Linkedin Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/bete.mrt/" target="_blank">
+                        <img class="contact_image" src="./images/insta.png" alt="Instagram Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/bete.mrt/" target="_blank">
+                        <img class="contact_image" src="./images/face.png" alt="Facebook Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/BeteMrt" target="_blank">
+                        <img class="contact_image" src="./images/twitter.png" alt="Twitter Icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+    <footer id="footer__container"></footer>
 </body>
+<script type="module" src="./scripts/main.js"></script>
+<script src="./scripts/footer.js"></script>
 </html>
-
-
-<!--Uma foto atual sua, acompanhada de um texto alternativo, que deve ser a descrição da foto que você está usando;-->
-<!--Uma lista de habilidades que você possui, com destaque para aquela de que você mais se orgulha;-->
-<!--Um link interno para a sua foto;-->
-<!--Um link externo para algum blog de que você goste, que abra em uma nova aba;-->
-<!--Partes do seu portfólio destacadas com negrito e/ou itálico;-->
-<!--Um índice com links internos para as diferentes seções do seu portfólio.-->
-
-<!--Organizada, extrovertida, minimalista e gosto de trabalhos artesanais-->
-<!--Mãe da Tutu e da Pitty-->
-<!--Conservação Ambiental é minha bandeira-->

@@ -1,0 +1,199 @@
+/* block__element--modifier */
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron&family=Press+Start+2P&display=swap');
+@import 'header.css';
+@import 'footer.css';
+
+/* colors */
+:root {
+    --color-black: #000000;
+    --color-black-opacity-1: #000000cc;
+    --color-black-opacity-2: #00000080;
+    --color-text: #f5f5f5;
+    --color-text-opacity-1: #f5f5f5b3;
+    --color-primary: #00d0ff;
+    /* Title, links, borders, shadows */
+    --color-secondary: #760eed;
+    /* Title, links, borders, shadows */
+    --color-tertiary: #0e37ed;
+    --color-quaternary: #2d0eed;
+    --color-quinary: #0e7ded;
+    --color-sextary: #5d78ed;
+}
+
+/* Fonts */
+
+.orbitron-regular {
+    font-family: "Orbitron";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kode-mono-regular {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: url('../images/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    color: var(--color-text);
+    display: grid;
+    font-family: "Press Start 2P";
+    /* font-size: calc(16px + 1vw); font grows 1px for every 100px of viewport width */
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    letter-spacing: 0.3rem;
+    width: 100vw;
+}
+
+a,
+.header__clock {
+    color: var(--color-text);
+    text-decoration: none;
+    text-shadow: 0 0 0.6rem var(--color-primary), 0 0 1.9rem var(--color-primary), 0 0 3.45rem var(--color-primary), 0 0 6.25rem var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-text-opacity-1);
+    text-shadow: -0.15rem -0.15rem 0 var(--color-primary), 0.15rem 0.15rem 0 var(--color-secondary);
+}
+
+h2,
+h3 {
+    font-weight: 300;
+    text-shadow: -0.15rem -0.15rem 0 var(--color-primary), 0.15rem 0.15rem 0 var(--color-secondary);
+}
+
+li,
+p {
+    margin: 0.5rem;
+}
+
+main {
+    grid-area: main;
+    margin: auto;
+    margin-top: 120px;
+    width: 90%;
+}
+
+nav {
+    text-align: left;
+    width: auto;
+}
+
+p {
+    font-family: "Orbitron", monospace;
+}
+
+strong {
+    color: var(--color-quaternary);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* main */
+.subtitle {
+    text-align: center;
+}
+
+.post {
+    background: linear-gradient(0deg, var(--color-black) 0%, var(--color-black-opacity-1) 100%);
+    border-bottom: 0.2rem double var(--color-primary);
+    border-left: 0.2rem double var(--color-secondary);
+    border-right: 0.2rem double var(--color-primary);
+    border-top: 0.2rem double var(--color-secondary);
+    box-shadow: -0.3rem -0.3rem 0 var(--color-primary), 0.3rem 0.3rem 0 var(--color-secondary);
+    padding: 1.5rem;
+}
+
+.post__content {
+    align-items: center;
+    display: grid;
+    font-family: "Orbitron", monospace;
+    font-weight: 100;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    line-height: 2rem;
+}
+
+/* global! */
+figure {
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    margin: 0.5rem;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    background-color: var(--color-black-opacity-1);
+    font: italic smaller sans-serif;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.contact_list {
+    padding-left: 1rem;
+}
+
+.contact_image {
+    width: 7vh;
+}
+
+.button__home {
+    background-color: var(--color-primary);
+    border: 0.25rem outset var(--color-primary);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+.button__home:hover {
+    background-color: var(--color-sextary);
+    border: 0.25rem inset var(--color-sextary);
+    text-shadow: 0 0 0.5rem var(--color-text), 0 0 2rem var(--color-text), 0 0 3.45rem var(--color-text), 0 0 6.25rem var(--color-text);
+}
+
+.button__home:active {
+    background-color: var(--color-secondary);
+}
+
+section {
+    background: linear-gradient(120deg, var(--color-black) 0%, var(--color-black-opacity-2) 100%);
+}
+
+@media (max-width: 600px) {
+    main {
+        margin-top: 30rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .post__content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
