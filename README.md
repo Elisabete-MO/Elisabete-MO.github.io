@@ -58,7 +58,7 @@ O projeto foi desenvolvido **sem o uso de frameworks**, com foco no domínio das
 <h3>📘 Documentação</h3>
 
 
-A documentação detalhada do projeto está disponível na [**Wiki do repositório**](https://github.com/Elisabete-MO/Elisabete-MO.github.io/wiki.). Nela são descritos:
+A documentação detalhada do projeto está disponível na [**Wiki do repositório**](https://github.com/Elisabete-MO/Elisabete-MO.github.io/wiki). Nela são descritos:
 
 -   Conceito visual e decisões de design
 -   Funcionalidades implementadas e planejadas
