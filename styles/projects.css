@@ -43,7 +43,7 @@
 
 .project__card:hover {
   border: 0.2rem solid var(--color-primary);
-  box-shadow: 0 0 0.6rem var(--color-black-primary), 0 0 1.9rem var(--color-black-primary);
+  box-shadow: 0 0 0.6rem var(--color-primary), 0 0 1.9rem var(--color-primary);
   transform: translateY(-4px);
 }
 
