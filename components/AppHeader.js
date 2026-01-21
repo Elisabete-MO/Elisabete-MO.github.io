@@ -2,12 +2,15 @@ class AppHeader extends HTMLElement {
   connectedCallback() {
     this.replaceChildren();
 
-    const clock = document.createElement("app-clock");
-    const nav = document.createElement("app-nav");
+    const header = document.createElement('header');
+    header.classList.add('header', 'surface');
 
-    this.appendChild(clock);
-    this.appendChild(nav);
+    const clock = document.createElement('app-clock');
+    const nav = document.createElement('app-nav');
+
+    header.append(clock, nav);
+    this.appendChild(header);
   }
 }
 
-customElements.define("app-header", AppHeader);
+customElements.define('app-header', AppHeader);

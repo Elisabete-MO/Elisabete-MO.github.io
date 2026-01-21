@@ -16,6 +16,28 @@
 }
 
 /* base typography */
+/* Fonts */
+
+.orbitron-regular {
+    font-family: "Orbitron";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kode-mono-regular {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
 html {
     font-size: clamp(14px, 1.2vw, 18px);
 }

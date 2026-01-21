@@ -2,13 +2,16 @@ class AppFooter extends HTMLElement {
     connectedCallback() {
         this.replaceChildren();
 
+        const footer = document.createElement("footer");
+
         const pAuthor = document.createElement("p");
         pAuthor.textContent = "Created by Elisabete Oliveira © 2025";
 
         const pCredits = document.createElement("p");
 
         const linkIcon = document.createElement("a");
-        linkIcon.href = "https://icons8.com/icon/T12wf6pMSu6F/horda-de-world-of-warcraft";
+        linkIcon.href =
+            "https://icons8.com/icon/T12wf6pMSu6F/horda-de-world-of-warcraft";
         linkIcon.target = "_blank";
         linkIcon.rel = "noopener noreferrer";
         linkIcon.textContent = "World of Warcraft Horde";
@@ -25,7 +28,8 @@ class AppFooter extends HTMLElement {
             linkIcons8
         );
 
-        this.append(pAuthor, pCredits);
+        footer.append(pAuthor, pCredits);
+        this.appendChild(footer);
     }
 }
 

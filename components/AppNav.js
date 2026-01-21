@@ -1,34 +1,24 @@
 class AppNav extends HTMLElement {
   connectedCallback() {
-    this.replaceChildren();
-
-    const nav = document.createElement("nav");
-    nav.className = "nav";
-    nav.setAttribute("aria-label", "Main navigation");
-
-    const ul = document.createElement("ul");
+    const nav = document.createElement('nav');
+    nav.className = 'nav';
 
     const links = [
-      { href: "#home", label: "Home" },
-      { href: "#about", label: "About" },
-      { href: "#projects", label: "Projects" },
-      { href: "#skills", label: "Skills" },
+      { label: 'Home', href: '#home' },
+      { label: 'About', href: '#about' },
+      { label: 'Projects', href: '#projects' },
+      { label: 'Skills', href: '#skills' }
     ];
 
-    links.forEach(link => {
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-
-      a.href = link.href;
-      a.textContent = link.label;
-
-      li.appendChild(a);
-      ul.appendChild(li);
+    links.forEach(({ label, href }) => {
+      const a = document.createElement('a');
+      a.textContent = label;
+      a.href = href;
+      nav.appendChild(a);
     });
 
-    nav.appendChild(ul);
     this.appendChild(nav);
   }
 }
 
-customElements.define("app-nav", AppNav);
+customElements.define('app-nav', AppNav);
