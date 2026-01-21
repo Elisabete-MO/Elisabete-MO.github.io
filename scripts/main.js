@@ -1,11 +1,4 @@
-import { loadHeader } from './header.js';
-import { initClock } from './clock.js';
-import { loadSkills } from './skills.js';
-import './projects.js';
-
-
-loadSkills();
-
-loadHeader();
-initClock();
-
+import "./components/AppHeader.js";
+import "./components/AppClock.js";
+import "./components/Skills.js";
+import "./components/Projects.js";
