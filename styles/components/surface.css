@@ -1,0 +1,5 @@
+.surface {
+  background-color: var(--color-black-opacity-1);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--color-primary);
+}

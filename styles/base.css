@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron&family=Press+Start+2P&display=swap');
+
+/* colors */
+:root {
+    --color-black: #000000;
+    --color-black-opacity-1: #000000cc;
+    --color-black-opacity-2: #00000080;
+    --color-text: #f5f5f5;
+    --color-text-opacity-1: #f5f5f5b3;
+    --color-primary: #00d0ff;
+    --color-secondary: #760eed;
+    --color-tertiary: #0e37ed;
+    --color-quaternary: #2d0eed;
+    --color-quinary: #0e7ded;
+    --color-sextary: #5d78ed;
+}
+
+/* base typography */
+html {
+    font-size: clamp(14px, 1.2vw, 18px);
+}
+
+body {
+    background-attachment: fixed;
+    background-image: url('../assets/images/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-text);
+    font-family: "Press Start 2P";
+    height: 100vh;
+    width: 100vw;
+}
+
+/* text */
+p {
+    font-family: "Orbitron", monospace;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-primary);
+    font-weight: 300;
+    text-shadow: 0 0 6px rgba(0, 208, 255, 0.6);
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}

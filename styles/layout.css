@@ -1,0 +1,26 @@
+app-layout {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+app-header {
+  grid-area: header;
+}
+
+app-layout>main {
+  grid-area: main;
+  margin: auto;
+  margin-top: 120px;
+  padding: clamp(1rem, 3vw, 3rem);
+  width: 90%;
+}
+
+app-footer {
+  grid-area: footer;
+}

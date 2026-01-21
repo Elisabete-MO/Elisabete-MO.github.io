@@ -1,4 +1,4 @@
-import "./components/AppHeader.js";
-import "./components/AppClock.js";
-import "./components/Skills.js";
-import "./components/Projects.js";
+import "./AppClock";
+import "./AppFooter";
+import "./AppHeader";
+import "./AppNav";

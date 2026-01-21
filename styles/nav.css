@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  color: var(--color-text);
+  text-shadow: 0 0 3px rgba(0, 208, 255, 0.5);
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #ffffff;
+  text-shadow:
+    0 0 4px rgba(0, 208, 255, 0.9),
+    0 0 12px rgba(0, 208, 255, 0.7),
+    0 0 20px rgba(118, 14, 237, 0.6);
+}
+
+.nav a.active {
+  color: var(--color-primary);
+  text-shadow: 0 0 6px rgba(0, 208, 255, 0.9);
+}
