@@ -1,4 +1,8 @@
-class AppNav extends HTMLElement {
+import { loadCss } from "/utils/loadCss.js";
+
+loadCss("/components/Nav/Nav.css");
+
+class Nav extends HTMLElement {
   connectedCallback() {
     const nav = document.createElement('nav');
     nav.className = 'nav';
@@ -21,4 +25,4 @@ class AppNav extends HTMLElement {
   }
 }
 
-customElements.define('app-nav', AppNav);
+customElements.define('app-nav', Nav);

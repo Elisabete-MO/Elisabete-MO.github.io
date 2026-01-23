@@ -1,8 +1,12 @@
+@import 'reset.css';
+
 @import 'base.css';
-@import 'components.css';
-@import 'footer.css';
+@import './animations.css';
+@import 'variables.css';
+/* @import 'components.css'; */
+/* @import 'footer.css';
 @import 'header.css';
 @import 'layout.css';
-@import 'nav.css';
-@import 'reset.css';
+@import 'nav.css'; */
+
 @import 'responsive.css';

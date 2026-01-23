@@ -8,9 +8,9 @@
   z-index: 10;
 }
 
-/* melhora contraste no fundo animado */
 .header.surface {
-  background-color: var(--color-black-opacity-1);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--color-primary);
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }

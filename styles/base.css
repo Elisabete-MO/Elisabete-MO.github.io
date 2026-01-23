@@ -1,45 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron&family=Press+Start+2P&display=swap');
-
-/* colors */
-:root {
-    --color-black: #000000;
-    --color-black-opacity-1: #000000cc;
-    --color-black-opacity-2: #00000080;
-    --color-text: #f5f5f5;
-    --color-text-opacity-1: #f5f5f5b3;
-    --color-primary: #00d0ff;
-    --color-secondary: #760eed;
-    --color-tertiary: #0e37ed;
-    --color-quaternary: #2d0eed;
-    --color-quinary: #0e7ded;
-    --color-sextary: #5d78ed;
-}
-
-/* base typography */
-/* Fonts */
-
-.orbitron-regular {
-    font-family: "Orbitron";
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.kode-mono-regular {
-    font-family: "Kode Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.press-start-2p-regular {
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
 html {
     font-size: clamp(14px, 1.2vw, 18px);
+    height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -49,7 +11,11 @@ body {
     background-position: center;
     color: var(--color-text);
     font-family: "Press Start 2P";
-    height: 100vh;
+    height: 100%;
+    letter-spacing: 0.3rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
     width: 100vw;
 }
 
@@ -71,4 +37,8 @@ h3 {
 a {
     color: var(--color-text);
     text-decoration: none;
+}
+
+.anchor {
+    scroll-margin-top: var(--header-height);
 }

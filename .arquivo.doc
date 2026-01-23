@@ -1,0 +1,52 @@
+<section id="skills" class="post"></section>
+
+<section id="projects">
+    <h2>🧩 Projetos</h2>
+
+    <div class="projects__carousel">
+        <button class="carousel__btn prev" aria-label="Previous project">‹</button>
+
+        <div class="projects__viewport">
+            <div class="projects__track"></div>
+        </div>
+
+        <button class="carousel__btn next" aria-label="Next project">›</button>
+    </div>
+</section>
+
+<!-- Botão para abrir o modal -->
+<label for="toggle-modal" class="open-btn">☰</label>
+<input type="checkbox" id="toggle-modal">
+
+<!-- Modal lateral -->
+<div class="side-modal">
+    <ul class="contact_list">
+        <li>
+            <a href="https://github.com/Elisabete-MO" target="_blank">
+                <img class="contact_image" src="./images/github.png" alt="Github Icon">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/elisabete-martinsdeoliveira/" target="_blank">
+                <img class="contact_image" src="./images/linkedin.png" alt="Linkedin Icon">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/bete.mrt/" target="_blank">
+                <img class="contact_image" src="./images/insta.png" alt="Instagram Icon">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/bete.mrt/" target="_blank">
+                <img class="contact_image" src="./images/face.png" alt="Facebook Icon">
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/BeteMrt" target="_blank">
+                <img class="contact_image" src="./images/twitter.png" alt="Twitter Icon">
+            </a>
+        </li>
+    </ul>
+</div>
+
+</main>

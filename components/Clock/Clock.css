@@ -1,0 +1,8 @@
+.header__clock {
+  font-family: "Press Start 2P", monospace;
+  color: var(--color-text);
+}
+
+.header__clock .separator {
+  animation: blink 1.2s infinite;
+}

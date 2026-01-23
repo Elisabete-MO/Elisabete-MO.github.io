@@ -1,4 +1,11 @@
-class AppHeader extends HTMLElement {
+import '../Clock/Clock.js';
+import '../Nav/Nav.js';
+
+import { loadCss } from "/utils/loadCss.js";
+
+loadCss("/components/Header/Header.css");
+
+class Header extends HTMLElement {
   connectedCallback() {
     this.replaceChildren();
 
@@ -13,4 +20,4 @@ class AppHeader extends HTMLElement {
   }
 }
 
-customElements.define('app-header', AppHeader);
+customElements.define('app-header', Header);

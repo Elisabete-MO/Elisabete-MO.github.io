@@ -1,4 +1,8 @@
-class AppFooter extends HTMLElement {
+import { loadCss } from "/utils/loadCss.js";
+
+loadCss("/components/Footer/Footer.css");
+
+class Footer extends HTMLElement {
     connectedCallback() {
         this.replaceChildren();
 
@@ -33,4 +37,4 @@ class AppFooter extends HTMLElement {
     }
 }
 
-customElements.define("app-footer", AppFooter);
+customElements.define("app-footer", Footer);
