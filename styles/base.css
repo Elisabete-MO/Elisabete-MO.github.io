@@ -1,6 +1,8 @@
 html {
     font-size: clamp(14px, 1.2vw, 18px);
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
     scroll-behavior: smooth;
 }
 
@@ -34,11 +36,19 @@ h3 {
     text-shadow: 0 0 6px rgba(0, 208, 255, 0.6);
 }
 
+h2 {
+    font-family: "Orbitron", monospace;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    text-shadow: 0 0 6px rgba(0, 208, 255, 0.6);
+}
+
 a {
     color: var(--color-text);
     text-decoration: none;
 }
 
 .anchor {
-    scroll-margin-top: var(--header-height);
+    scroll-margin-top: calc(var(--header-height) + 0.5rem);
 }

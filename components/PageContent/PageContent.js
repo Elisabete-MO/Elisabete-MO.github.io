@@ -1,8 +1,5 @@
 import { loadCss } from "/utils/loadCss.js";
 
-loadCss("/components/PageContent/PageContent.css");
-loadCss("/styles/components/surface.css");
-
 function renderMusic(item) {
   const li = document.createElement('li');
 
@@ -41,6 +38,8 @@ function createEmoji(emoji, label = 'item') {
 
 class PageContent extends HTMLElement {
   connectedCallback() {
+    loadCss("/components/PageContent/PageContent.css");
+    loadCss("/styles/components/surface.css");
     this.replaceChildren(); // Limpa conteúdo se já existir
 
     const pageContent = document.createElement('div');
@@ -82,7 +81,7 @@ class PageContent extends HTMLElement {
       { emoji: '📍', label: 'Cotia/SP' },
       { emoji: '🌱', label: 'Conservação ambiental como princípio' },
       { emoji: '💻', label: 'Apaixonada por Cálculo e Java' },
-      { emoji: '🎮', label: 'World of Warcraft', link: 'https://www.worldofwarcraft.com/pt-br/' },
+      { emoji: '🎮', label: 'World of Warcraft Player', link: 'https://www.worldofwarcraft.com/pt-br/' },
       {
         emoji: '🎵',
         artists: [

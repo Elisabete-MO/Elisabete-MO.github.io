@@ -1,16 +1,20 @@
 .header {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 2rem;
+  gap: 1rem;
+  min-height: 40px;
+  padding: 1rem 1.25rem;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 9999;
 }
 
 .header.surface {
   border-radius: 0;
-  border-left: none;
-  border-right: none;
-  border-top: none;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.header__clock {
+  font-size: 0.85rem;
 }

@@ -1,9 +1,7 @@
 import { loadCss } from "/utils/loadCss.js";
-
-loadCss("/components/Footer/Footer.css");
-
 class Footer extends HTMLElement {
     connectedCallback() {
+        loadCss("/components/Footer/Footer.css");
         this.replaceChildren();
 
         const footer = document.createElement("footer");

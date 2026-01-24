@@ -39,5 +39,5 @@
 }
 
 :root {
-  --header-height: clamp(64px, 8vh, 96px);
+  --header-height: clamp(56px, 8vw, 72px);
 }

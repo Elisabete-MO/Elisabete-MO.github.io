@@ -2,11 +2,9 @@ import '../Clock/Clock.js';
 import '../Nav/Nav.js';
 
 import { loadCss } from "/utils/loadCss.js";
-
-loadCss("/components/Header/Header.css");
-
 class Header extends HTMLElement {
   connectedCallback() {
+    loadCss("/components/Header/Header.css");
     this.replaceChildren();
 
     const header = document.createElement('header');

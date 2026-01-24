@@ -1,17 +1,15 @@
 import { loadCss } from "/utils/loadCss.js";
-
-loadCss("/components/Nav/Nav.css");
-
 class Nav extends HTMLElement {
   connectedCallback() {
+    loadCss("/components/Nav/Nav.css");
     const nav = document.createElement('nav');
     nav.className = 'nav';
 
     const links = [
       { label: 'Home', href: '#home' },
       { label: 'About', href: '#about' },
-      { label: 'Projects', href: '#projects' },
-      { label: 'Skills', href: '#skills' }
+      { label: 'Skills', href: '#skills' },
+      { label: 'Projects', href: '#projects' }
     ];
 
     links.forEach(({ label, href }) => {
