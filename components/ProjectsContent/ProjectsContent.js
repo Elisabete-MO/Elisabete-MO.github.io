@@ -11,7 +11,9 @@ class ProjectsContent extends HTMLElement {
           <button class="carousel__btn prev">‹</button>
 
           <div class="projects__viewport">
-            <div class="projects__track"></div>
+            <div class="projects__scroller">
+              <div class="projects__track"></div>
+            </div>
           </div>
 
           <button class="carousel__btn next">›</button>
@@ -23,12 +25,13 @@ class ProjectsContent extends HTMLElement {
   }
 
   initProjects() {
+    const scroller = this.querySelector('.projects__scroller');
     const track = this.querySelector('.projects__track');
     const next = this.querySelector('.next');
     const prev = this.querySelector('.prev');
     const CARD_WIDTH = 280 + 32;
 
-    if (!track || !next || !prev) return;
+    if (!scroller || !track || !next || !prev) return;
 
     fetch('https://api.github.com/users/Elisabete-MO/repos')
       .then(res => res.json())
@@ -42,7 +45,7 @@ class ProjectsContent extends HTMLElement {
 
             card.innerHTML = `
               <h3 class="project__title">${repo.name}</h3>
-              <p>${repo.description || 'Sem descrição.'}</p>
+              <p class="project__description">${repo.description || 'Sem descrição.'}</p>
               <div class="project__footer">
                 <small>🛠 ${repo.language || '—'}</small>
                 <a href="${repo.html_url}" target="_blank">Ver no GitHub</a>
@@ -54,11 +57,13 @@ class ProjectsContent extends HTMLElement {
       });
 
     next.addEventListener('click', () => {
-      track.scrollBy({ left: CARD_WIDTH, behavior: 'smooth' });
+      this.querySelector('.projects__scroller')
+        .scrollBy({ left: CARD_WIDTH, behavior: 'smooth' });
     });
 
     prev.addEventListener('click', () => {
-      track.scrollBy({ left: -CARD_WIDTH, behavior: 'smooth' });
+      this.querySelector('.projects__scroller')
+        .scrollBy({ left: -CARD_WIDTH, behavior: 'smooth' });
     });
   }
 }

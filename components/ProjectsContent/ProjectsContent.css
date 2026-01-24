@@ -1,23 +1,20 @@
 .carousel__btn {
+  position: absolute;
+  top: 50%;
   background: none;
   border: none;
-  font-weight: 900;
   font-size: 3rem;
   cursor: pointer;
   color: var(--color-text);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  z-index: 2;
-}
-
-.carousel__btn.next {
-  right: -3rem
+  z-index: 3;
 }
 
 .carousel__btn.prev {
-  left: -3rem
+  left: -2.5rem;
+}
+
+.carousel__btn.next {
+  right: -2.5rem;
 }
 
 .carousel__btn:hover {
@@ -30,21 +27,23 @@
   border: none;
   box-shadow: none;
   min-height: 100vh;
-  padding-block: clamp(4rem, 10vh, 6rem);
+  padding-top: clamp(1.5rem, 4vw, 4rem);
+  padding-bottom: clamp(1.5rem, 4vw, 4rem);
+  padding-inline: clamp(1rem, 4vw, 2rem);
   position: relative;
+  scroll-margin-top: var(--header-height);
 }
 
 .project__card {
   border: 0.2rem double var(--color-secondary);
   box-shadow:
     0 0 0.6rem var(--color-black-opacity-1),
-    0 0 1.9rem var(--color-black-opacity-2),
-    0 0 3.45rem var(--color-secondary);
+    0 0 1.9rem var(--color-secondary);
   display: flex;
   flex: 0 0 280px;
   flex-direction: column;
   font-size: 0.85rem;
-  height: 360px;
+  height: 320px;
   justify-content: space-between;
   max-width: 280px;
   position: relative;
@@ -67,7 +66,7 @@
 .projects__carousel {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   position: relative;
 }
 
@@ -76,9 +75,8 @@
   flex: 1;
   flex-grow: 1;
   overflow: hidden;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .project__footer {
@@ -97,11 +95,20 @@
   font-size: 0.8rem;
 }
 
+.projects__scroller {
+  overflow: visible;
+  scrollbar-width: none;
+}
+
+.projects__scroller::-webkit-scrollbar {
+  display: none;
+}
+
 .projects__track {
   display: flex;
-  gap: 1.25rem;
-  overflow-x: auto;
-  overflow-y: visible;
+  flex-direction: row;
+  gap: 1rem;
+  overflow: visible;
   scroll-behavior: smooth;
   padding: 1rem;
 }
@@ -117,8 +124,8 @@
 }
 
 .projects__viewport {
-  max-width: calc((280px * 3) + (1.25rem * 2));
+  flex: 1 1 auto;
   margin: 0 auto;
-  overflow: visible;
-  width: 100%;
+  overflow: hidden;
+  padding: 1rem;
 }
